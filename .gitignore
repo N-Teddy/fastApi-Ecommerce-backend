@@ -1,0 +1,68 @@
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+
+# ---------------------------
+# Virtual Environment
+# ---------------------------
+venv/
+env/
+.venv/
+
+# ---------------------------
+# IDEs / Editors
+# ---------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------------------
+# Environment Variables
+# ---------------------------
+.env
+.env.*
+*.env
+
+# ---------------------------
+# Logs
+# ---------------------------
+*.log
+logs/
+nohup.out
+
+# ---------------------------
+# Byte-compiled / Cache
+# ---------------------------
+.cache/
+.pytest_cache/
+mypy_cache/
+pytestdebug.log
+
+# ---------------------------
+# OS files
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Uvicorn reload artifacts
+# ---------------------------
+*.pid
+
+# ---------------------------
+# Local database files (if using SQLite during testing)
+# ---------------------------
+*.db
+*.sqlite3
