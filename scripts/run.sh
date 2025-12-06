@@ -1,10 +1,19 @@
 #!/bin/bash
 
 echo "Activating virtual environment..."
-source ../venv/bin/activate
 
-echo "Changing directory to project root..."
-cd ..
+# Go to project root (parent of scripts folder)
+cd "$(dirname "$0")/.." || exit
 
-echo "Starting FastAPI server..."
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+# Check if venv exists
+if [ ! -d "venv" ]; then
+    echo "❌ Virtual environment not found! Create it with:"
+    echo "python3 -m venv venv"
+    exit 1
+fi
+
+# Activate venv
+source venv/bin/activate
+
+echo "Starting FastAPI app..."
+uvicorn main:app --reload
