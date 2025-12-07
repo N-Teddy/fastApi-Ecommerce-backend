@@ -16,4 +16,4 @@ fi
 source venv/bin/activate
 
 echo "Starting FastAPI app..."
-uvicorn main:app --reload
+python -m uvicorn main:app --reload
